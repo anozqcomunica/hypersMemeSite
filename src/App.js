@@ -1,23 +1,22 @@
-import logo from './logo.svg';
+import React, { useState } from 'react';
+import Header from './components/Header';
+import Navbar from './components/Navbar'; // Importando a Navbar
+import About from './components/About'; // Importando a seção Sobre
+import Roadmap from './components/Roadmap'; // Importando o Roadmap
+import Footer from './components/Footer'; // Importando o Footer
+import { content } from './translations'; // Importando as traduções
 import './App.css';
 
 function App() {
+  const [language, setLanguage] = useState('pt');
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Navbar language={language} setLanguage={setLanguage} content={content[language]} />
+      <Header content={content[language]} />
+      <About id="about" content={content[language]} />
+      <Roadmap id="roadmap" content={content[language]} />
+      <Footer id="social" content={content[language]} />
     </div>
   );
 }
