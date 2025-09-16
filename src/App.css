@@ -58,42 +58,6 @@ body {
   color: #4CAF50;
 }
 
-.App-header {
-  position: relative; /* Necessário para o posicionamento absoluto do filho */
-  height: 100vh; /* Altura total da tela */
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  padding: 20px; /* Adiciona um respiro nas laterais */
-  font-size: calc(10px + 2vmin);
-}
-
-.header-content {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-}
-
-.pump-button {
-  background-color: #4CAF50; /* Cor verde de destaque */
-  color: white;
-  padding: 15px 30px;
-  border-radius: 50px; /* Bordas bem arredondadas */
-  text-decoration: none;
-  font-weight: 700;
-  font-size: 1.2rem;
-  margin-top: 30px; /* Espaçamento do subtítulo */
-  transition: transform 0.3s ease, background-color 0.3s ease;
-  display: inline-block;
-}
-
-.pump-button:hover {
-  transform: scale(1.05); /* Efeito de crescimento ao passar o mouse */
-  background-color: #45a049; /* Um verde um pouco mais escuro */
-}
-
 /* Estilos do Seletor de Idioma */
 .language-selector {
   display: flex;
@@ -126,26 +90,6 @@ body {
   background-color: #4CAF50;
   border-color: #4CAF50;
   font-weight: bold;
-}
-
-/* Estilos da Seção Sobre */
-.about-section, .roadmap-section, .app-footer {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  padding: 80px 40px; /* Aumenta o padding para dar mais respiro */
-  width: 100%; /* Garante que ocupe a largura total */
-  box-sizing: border-box; /* Garante que o padding não estoure a largura */
-}
-
-.about-section h2 {
-  font-size: 2.5rem;
-  margin-bottom: 20px;
-}
-
-.about-section p {
-  line-height: 1.8; /* Melhora a legibilidade */
 }
 
 /* Estilos da Seção Roadmap */

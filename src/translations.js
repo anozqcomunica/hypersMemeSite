@@ -35,6 +35,8 @@ export const content = {
     ],
     followUs: 'Siga-nos nas redes sociais',
     rightsReserved: 'Todos os direitos reservados.',
+    followers: 'Seguidores',
+    walletTitle: 'Acompanhe os fundos arrecadados pelo projeto',
     buyButton: 'Compre na Pump.fun',
   },
   en: {
@@ -73,6 +75,8 @@ export const content = {
     ],
     followUs: 'Follow us on social media',
     rightsReserved: 'All rights reserved.',
+    followers: 'Followers',
+    walletTitle: 'Track the funds raised by the project',
     buyButton: 'Buy on Pump.fun',
   },
 };

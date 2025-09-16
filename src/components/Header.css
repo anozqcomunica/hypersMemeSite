@@ -1,0 +1,92 @@
+.App-header {
+    position: relative;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    padding-top: 30px; /* Padding para Desktop */
+    font-size: calc(10px + 2vmin);
+}
+
+.pump-button {
+    background-color: #61CB87; /* Cor verde de destaque */
+    color: #1B3A35;
+    padding: 15px 30px;
+    border-radius: 50px; /* Bordas bem arredondadas */
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 1.2rem;
+    margin-top: 30px; /* Espaçamento do subtítulo */
+    transition: transform 0.3s ease, background-color 0.3s ease;
+    display: inline-block;
+}
+
+.pump-button:hover {
+    transform: scale(1.05); /* Efeito de crescimento ao passar o mouse */
+    background-color: #fafafa; /* Um verde um pouco mais escuro */
+}
+
+.header-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    gap: 2rem;
+}
+
+.header-content {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-around;
+    width: 100%;
+    gap: 2rem;
+    max-width: 1200px;
+}
+
+.header-text {
+    flex: 1;
+    max-width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.header-text h1 {
+    font-size: 2.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.header-text h2 {
+    font-weight: 400;
+    font-size: 1.2rem;
+}
+
+.header-image {
+    flex: 1;
+    max-width: 50%; /* Modificado de 100% para 50% para manter a coluna */
+    height: auto;
+    max-height: 500px;
+    object-fit: contain;
+}
+
+/* Ajuste para o header em telas menores */
+@media (max-width: 768px) {
+    .header-content {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .header-text, .header-image {
+        max-width: 100%; /* Em telas pequenas, permite que ocupem toda a largura */
+    }
+
+    .App-header {
+        height: auto; /* Permite que o header cresça conforme o conteúdo no mobile */
+        min-height: 100vh;
+        padding-top: 90px; /* Padding para Mobile */
+    }
+}
