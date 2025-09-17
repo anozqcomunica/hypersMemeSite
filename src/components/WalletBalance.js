@@ -5,8 +5,6 @@ import './WalletBalance.css';
 const WalletBalance = ({ content }) => {
   const [balance, setBalance] = useState(null);
   const walletAddress = 'Bia1MBxtRdnH3gvipmBofJNwHyuZNCa66HpqNGHWzg4y';
-
-  // Pega a URL da RPC do arquivo .env. Se não existir, usa uma pública como fallback.
   const rpcUrl = process.env.REACT_APP_SOLANA_RPC_URL;
 
   useEffect(() => {
@@ -21,7 +19,7 @@ const WalletBalance = ({ content }) => {
         const connection = new Connection(rpcUrl, 'confirmed');
         const publicKey = new PublicKey(walletAddress);
         const lamports = await connection.getBalance(publicKey);
-        const solBalance = lamports / 1e9; // 1 SOL = 10^9 lamports
+        const solBalance = lamports / 1e9;
 
         setBalance(solBalance.toLocaleString('en-US', { maximumFractionDigits: 2 }));
       } catch (error) {
@@ -31,7 +29,7 @@ const WalletBalance = ({ content }) => {
     };
 
     getBalance();
-  }, [rpcUrl]); // O useEffect será re-executado se a rpcUrl mudar
+  }, [rpcUrl]);
 
   return (
     <div className="wallet-balance-strip">
@@ -39,6 +37,14 @@ const WalletBalance = ({ content }) => {
       <div className="wallet-info">
         <span className="wallet-balance">{balance !== null ? `${balance} SOL` : 'Loading...'}</span>
       </div>
+      <a
+        href={`https://solscan.io/account/${walletAddress}`}
+        target="_blank"
+        rel="noopener noreferrer"
+        className="wallet-address-link"
+      >
+        {walletAddress}
+      </a>
     </div>
   );
 };

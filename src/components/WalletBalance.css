@@ -1,5 +1,5 @@
 .wallet-balance-strip {
-    background-color: #4CAF50; /* Cor de destaque verde */
+    background-color: #4CAF50; /* Cor verde do botão pump.fun */
     color: #ffffff;
     padding: 30px 20px;
     text-align: center;
@@ -25,4 +25,18 @@
 .wallet-balance {
     font-size: 2.5rem;
     font-weight: 700;
+}
+
+.wallet-address-link {
+    display: block;
+    margin-top: 15px;
+    color: #000000;
+    text-decoration: none;
+    
+    word-break: break-all;
+    transition: color 0.3s ease;
+}
+
+.wallet-address-link:hover {
+    color: #ffffff;
 }
