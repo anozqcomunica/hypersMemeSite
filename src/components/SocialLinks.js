@@ -1,4 +1,5 @@
 import React from 'react';
+import './SocialLinks.css';
 
 const SocialLinks = () => {
   return (
@@ -18,6 +19,10 @@ const SocialLinks = () => {
       <a href="https://www.tiktok.com/@hyperskidsafrica23" target="_blank" rel="noopener noreferrer">
         {/* Caminho relativo à pasta public */}
         <img src="/icons/tiktok.svg" alt="Tiktok" />
+      </a>
+      <a href="https://www.youtube.com/@hyperskidsafrica" target="_blank" rel="noopener noreferrer">
+        {/* Caminho relativo à pasta public */}
+        <img src="/icons/youtube.svg" alt="YouTube" />
       </a>
     </div>
   );

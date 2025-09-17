@@ -1,5 +1,6 @@
 import React from 'react';
 import SocialLinks from './SocialLinks';
+import './Footer.css';
 
 const Footer = ({ id, content }) => { // 1. O 'id' já está sendo recebido
   return (

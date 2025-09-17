@@ -1,0 +1,22 @@
+.app-footer {
+    background-color: #111;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    text-align: center;
+    padding: 60px 20px; /* Adicionado padding que estava na media query do App.css */
+    box-sizing: border-box;
+}
+
+.app-footer h3 {
+    margin: 0;
+    font-size: 1.2rem;
+    font-weight: 400;
+}
+
+.app-footer p {
+    margin: 0;
+    font-size: 0.9rem;
+    color: #aaa;
+}

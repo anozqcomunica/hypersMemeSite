@@ -134,40 +134,6 @@ body {
   line-height: 1.8;
 }
 
-/* Estilos do Footer */
-.app-footer {
-  background-color: #111;  gap: 20px;
-  text-align: center;
-}
-
-.app-footer h3 {
-  margin: 0;
-  font-size: 1.2rem;
-  font-weight: 400;
-}
-
-.app-footer p {
-  margin: 0;
-  font-size: 0.9rem;
-  color: #aaa;
-}
-
-/* Estilos dos Social Links */
-.social-links {
-  display: flex;
-  gap: 25px;
-}
-
-.social-links a img {
-  width: 30px;
-  height: 30px;
-  transition: transform 0.2s ease-in-out;
-}
-
-.social-links a:hover img {
-  transform: scale(1.1);
-}
-
 /* --- Estilos para Responsividade da Navbar --- */
 
 .navbar-toggle {
